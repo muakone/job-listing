@@ -1,38 +1,313 @@
-.App {
-  text-align: center;
+:root {
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  --Light-Grayish-Cyan: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-bg: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  --fw-5: 500;
+  --fw-7: 700;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--Light-Grayish-Cyan);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  min-height: 9em;
+  background-color: var(--Desaturated-Dark-Cyan);
+}
+.jobHeader {
+  position: static;
+  z-index: 9999;
+}
+.headerbg {
+  width: 100%;
+  height: 9em;
+  background-image: url(./images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 9em;
+  background-position: 100%;
+}
+.cardContainer {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 20px auto;
   flex-direction: column;
+}
+.card {
+  width: 80vw;
+  min-height: 140px;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+.listContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.listDetails {
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  line-height: 15px;
+}
+.listDetails img {
+  height: 80px;
+}
+.filterItems {
+  display: flex;
+}
+.cardSection {
+  
+}
+.FEATURED {
+  border-left: solid 6px var(--Desaturated-Dark-Cyan);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;  
+}
+.filterItems {
+  padding-right: 30px;
+}
+.nameFeature {
+  display: flex;
+  margin-top: 10px;
+}
+.listName {
+  margin-left: 20px;
+  line-height: 10px;
+}
+.nameFeature h5 {
+  font-size: 18px;
+  color: hsl(180, 29%, 50%);
+  white-space: nowrap;
+}
+.nameFeature button {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.dataButtons {
+   margin-left: 10px;
+   display: flex;
+}
+button.featuredButton {
+  background-color: var(--Very-Dark-Grayish-Cyan);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+button.new {
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.jobContainer {
+  margin-top: -27px;
+}
+.job h2 {
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: var(--fw-7);
+}
+.job h2:hover {
+  color: var(--Desaturated-Dark-Cyan);
+}
+.duration {
+  display: flex;
+  margin-top: -19px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.duration p {
+  margin-right: 15px;
+  color: var(--Dark-Grayish-Cyan);
+}
+.filterItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterItems button {
+  background-color: var(--Light-Grayish-Cyan);
+  margin-right: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  color: var(--Desaturated-Dark-Cyan);
+  font-size: 15px;
+  font-weight: var(--fw-7);
+}
+.filterItems button:hover {
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: var(--Light-Grayish-Cyan);
+}
+.hr-line {
+  display: none;
+}
+/*Show Details*/
+.filterDetails {
+  width: 100%;
+  margin-top: -40px !important;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
 }
-
-.App-link {
-  color: #61dafb;
+.showDetails {
+  width: 80%;
+  min-height: 70px;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.closeDetails {
+  color: var(--Desaturated-Dark-Cyan);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.filter {
+  margin-left: 15px;
+  display: flex;
+}
+.cardFilterButton {
+  background-color: var(--Light-Grayish-Cyan);
+  padding: 13px 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: var(--Desaturated-Dark-Cyan);
+  font-weight: var(--fw-7);
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.filterElement {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.filterElement span {
+  background-color: var(--Desaturated-Dark-Cyan);
+  padding: 16px 10px;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10px;
+}
+.filterElement span:hover {
+  background-color: var(--Very-Dark-Grayish-Cyan);
+}
+.langBtn {
+  display: flex;
+  flex-wrap: wrap;
+}
+.closeDetails:hover {
+  text-decoration: underline;
+}
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+@media(max-width: 1024px) {
+  .card {
+    width: 90vw;
   }
-  to {
-    transform: rotate(360deg);
+  .dataButtons {
+    margin-left: 5px;
+  }
+}
+
+@media(max-width: 768px) {
+  .headerbg {
+    background-image: url(./images/bg-header-mobile.svg);
+  }
+  .cardContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card {
+    width: 20em;
+    min-height: 335px;
+    margin-bottom: 70px;
+  }
+  .listContainer {
+    flex-direction: column;
+    padding: 4px 10px;
+    align-items: flex-start;
+  }
+  .listDetails {
+    flex-direction: column;
+    margin-left: 2px;
+    padding-left: 0;
+    align-items: flex-start;
+  }
+  .listDetails img {
+    margin-top: -40px;
+  }
+  .nameFeature h5 {
+    font-size: 15px;
+  }
+  .listName {
+    margin-left: 0px;
+    line-height: 16px;
+  }
+  .filterItems {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .filterItems button {
+    margin-bottom: 7px;
+  }
+  .langBtn {
+    flex-wrap: wrap;
+  }
+  .duration {
+    width: 100%;
+    border-bottom: solid 1px gray;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 425px) {
+  .job h2 {
+    font-size: 18px;
+  }
+  .showDetails {
+    width: 90%;
+  }
+  .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
