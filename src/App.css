@@ -72,9 +72,6 @@ header {
 .filterItems {
   display: flex;
 }
-.cardSection {
-  
-}
 .FEATURED {
   border-left: solid 6px var(--Desaturated-Dark-Cyan);
   border-top-left-radius: 5px;
