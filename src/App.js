@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import  data  from './data.json';
 import Card from './components/Card';
-//import Filter from './components/Filter'
 import ShowDetails from './components/ShowDetails';
 
 function App() {
@@ -53,20 +52,6 @@ useEffect(() => {
 // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [filters]);
 
-  /* 
-  const [datas, setData] = useState([])
-
-  const listData = () => {
-    fetch('data.json')
-    .then(response => response.json())
-    .then((data) => {
-      console.log(data)
-    })
-  }
-
-  
-
-  */
   
   return (
     <div className="App">
