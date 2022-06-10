@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](./images/desktop-Job-Listing-App.png)
-![Mobile View](./images/mobile-Job-Listing-App.png)
+![Desktop View](./src/images/desktop-Job-Listing-App.png)
+![Mobile View](./src/images/mobile-Job-Listing-App.png)
 
 
 ### Links
