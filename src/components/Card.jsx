@@ -4,7 +4,7 @@ import FilterItems from './FilterItems'
 const Card = ({data, filtering}) => {
 
   return (
-    <section className='' key={data.id}>
+    <section key={data.id}>
         <div className={`card ${data.featured === true ? "FEATURED" : ""} `}>
             <div className={`listContainer`}>
                 <div className="listDetails">

@@ -22,10 +22,6 @@ header {
   min-height: 9em;
   background-color: var(--Desaturated-Dark-Cyan);
 }
-.jobHeader {
-  position: static;
-  z-index: 9999;
-}
 .headerbg {
   width: 100%;
   height: 9em;
@@ -34,6 +30,7 @@ header {
   background-size: 100% 9em;
   background-position: 100%;
 }
+/*Job Container*/
 .cardContainer {
   width: 100%;
   display: flex;
@@ -50,6 +47,11 @@ header {
   border-radius: 15px;
   margin-bottom: 40px;
   box-sizing: border-box;
+}
+.FEATURED {
+  border-left: solid 6px var(--Desaturated-Dark-Cyan);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;  
 }
 .listContainer {
   width: 100%;
@@ -69,24 +71,13 @@ header {
 .listDetails img {
   height: 80px;
 }
-.filterItems {
-  display: flex;
-}
-.FEATURED {
-  border-left: solid 6px var(--Desaturated-Dark-Cyan);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;  
-}
-.filterItems {
-  padding-right: 30px;
+.listName {
+  margin-left: 20px;
+  line-height: 10px;
 }
 .nameFeature {
   display: flex;
   margin-top: 10px;
-}
-.listName {
-  margin-left: 20px;
-  line-height: 10px;
 }
 .nameFeature h5 {
   font-size: 18px;
@@ -101,16 +92,16 @@ header {
    margin-left: 10px;
    display: flex;
 }
-button.featuredButton {
-  background-color: var(--Very-Dark-Grayish-Cyan);
+button.new {
+  background-color: var(--Desaturated-Dark-Cyan);
   color: white;
   padding: 5px 10px;
   border-radius: 30px;
   font-size: 12px;
   font-weight: 500;
 }
-button.new {
-  background-color: var(--Desaturated-Dark-Cyan);
+button.featuredButton {
+  background-color: var(--Very-Dark-Grayish-Cyan);
   color: white;
   padding: 5px 10px;
   border-radius: 30px;
@@ -133,15 +124,20 @@ button.new {
   margin-top: -19px;
   text-align: left;
   flex-wrap: wrap;
+  width: 100%;
 }
 .duration p {
   margin-right: 15px;
   color: var(--Dark-Grayish-Cyan);
 }
+.hr-line {
+  display: none;
+}
 .filterItems {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding-right: 30px;
 }
 .filterItems button {
   background-color: var(--Light-Grayish-Cyan);
@@ -156,9 +152,6 @@ button.new {
 .filterItems button:hover {
   background-color: var(--Desaturated-Dark-Cyan);
   color: var(--Light-Grayish-Cyan);
-}
-.hr-line {
-  display: none;
 }
 /*Show Details*/
 .filterDetails {
@@ -292,9 +285,14 @@ button.new {
     flex-wrap: wrap;
   }
   .duration {
-    width: 100%;
     border-bottom: solid 1px gray;
     margin-bottom: 30px;
+    flex-wrap: nowrap;
+    margin-right: 8px;
+  }
+  .duration p {
+    margin-right: 4px;
+    white-space: nowrap;
   }
 }
 

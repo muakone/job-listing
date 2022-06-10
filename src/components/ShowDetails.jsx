@@ -6,7 +6,6 @@ const ShowDetails = ({filters, removeFilter, setFilters}) => {
         setFilters([])
     }
 
-    
   return (
     <div className='showDetails'>
         <div className="filterElement">
