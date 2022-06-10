@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/muakone/job-listing.git)
-- Live Site URL: [Add live site URL here](https://muakone.github.io/job-listing)
+- Solution URL: [Github Repo](https://github.com/muakone/job-listing.git)
+- Live Site URL: [Live site](https://muakone.github.io/job-listing)
 
 
 ## My process
