@@ -121,7 +121,7 @@ button.new {
   margin-top: -27px;
 }
 .job h2 {
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
   font-weight: var(--fw-7);
 }
@@ -141,10 +141,12 @@ button.new {
 .filterItems {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .filterItems button {
   background-color: var(--Light-Grayish-Cyan);
   margin-right: 10px;
+  margin-bottom: 7px;
   padding: 12px;
   border-radius: 5px;
   color: var(--Desaturated-Dark-Cyan);
@@ -281,6 +283,7 @@ button.new {
   .filterItems {
     flex-wrap: wrap;
     width: 100%;
+    justify-content: flex-start;
   }
   .filterItems button {
     margin-bottom: 7px;
@@ -303,8 +306,16 @@ button.new {
     width: 90%;
   }
   .card {
-    width: 90%;
+    min-width: 20em;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media(max-width: 320px) {
+  .card {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
   }
 }
